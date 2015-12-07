@@ -148,6 +148,50 @@
 					</execution>
 				</executions>
 			</plugin> -->
+																				<!-- http://stackoverflow.com/questions/5195545/looking-for-webstart-maven-plugin-sample-application -->
+			<plugin>
+				<groupId>org.codehaus.mojo.webstart</groupId>
+				<artifactId>webstart-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jnlp-inline</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<excludeTransitive>false</excludeTransitive>
+					<libPath>lib</libPath>
+					<outputJarVersions>true</outputJarVersions>
+					<dependencies />
+					<jnlp>
+						<outputFile>main.jnlp</outputFile>
+						<mainClass>com.u14n.sandbox.swing.Main</mainClass>
+					</jnlp>
+					<sign>
+						<keystore>${basedir}/keystore</keystore>
+						<keypass>password</keypass>
+						<storepass>password</storepass>
+						<alias>EmbeddedTomcatWebstart</alias>
+						<dnameCn>EmbeddedTomcatWebstart</dnameCn>
+						<dnameOu>Organisation Unit</dnameOu>
+						<dnameO>Organisation</dnameO>
+						<dnameL>Location</dnameL>
+						<dnameSt>State</dnameSt>
+						<dnameC>Country</dnameC>
+						<verify>true</verify>
+						<keystoreConfig>
+							<delete>true</delete>
+							<gen>true</gen>
+						</keystoreConfig>
+					</sign>
+					<!-- <pack200>true</pack200> -->
+					<gzip>true</gzip>
+					<outputJarVersions>false</outputJarVersions>
+					<verbose>true</verbose>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -295,7 +339,9 @@
 					</check>
 					<instrumentation>
 						<ignoreTrivial>true</ignoreTrivial>
-						<ignoreMethodAnnotation>com.u14n.sandbox.swing.CoberturaIgnore</ignoreMethodAnnotation>
+						<ignoreMethodAnnotations>
+							<ignoreMethodAnnotation>com.u14n.sandbox.swing.CoberturaIgnore</ignoreMethodAnnotation>
+						</ignoreMethodAnnotations>
 						<excludes>
 							<exclude>com/u14n/sandbox/swing/CoberturaIgnore.class</exclude>
 						</excludes>
