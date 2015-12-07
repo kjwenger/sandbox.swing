@@ -8,27 +8,28 @@ import junit.framework.TestSuite;
  * Unit test for simple Main.
  */
 public class MainTest extends TestCase {
-	/**
-	 * Create the test case
-	 *
-	 * @param testName name of the test case
-	 */
-	public MainTest(String testName) {
-		super(testName);
-	}
+    /**
+     * Create the test case
+     *
+     * @param testName
+     *            name of the test case
+     */
+    public MainTest(String testName) {
+        super(testName);
+    }
 
-	/**
-	 * @return the suite of tests being tested
-	 */
-	public static Test suite() {
-		return new TestSuite(MainTest.class);
-	}
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite() {
+        return new TestSuite(MainTest.class);
+    }
 
-	/**
-	 * Rigorous Test :-)
-	 */
-	public void testMain() {
-//		String[] args = { "main" };
-//		Main.main(args);
-	}
+    /**
+     * Rigorous Test :-)
+     */
+    public void testMain() {
+        String[] args = { "main" };
+        // Main.main(args);
+    }
 }
