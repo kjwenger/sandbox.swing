@@ -11,8 +11,7 @@ public class MainTest extends TestCase {
 	/**
 	 * Create the test case
 	 *
-	 * @param testName
-	 *            name of the test case
+	 * @param testName name of the test case
 	 */
 	public MainTest(String testName) {
 		super(testName);
@@ -29,6 +28,7 @@ public class MainTest extends TestCase {
 	 * Rigorous Test :-)
 	 */
 	public void testMain() {
-		assertTrue(true);
+//		String[] args = { "main" };
+//		Main.main(args);
 	}
 }
