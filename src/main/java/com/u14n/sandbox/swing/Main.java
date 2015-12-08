@@ -4,6 +4,8 @@ import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
+import com.u14n.sandbox.CoverageIgnore;
+
 /**
  *
  */

@@ -1,4 +1,4 @@
-package com.u14n.sandbox.swing;
+package com.u14n.sandbox;
 
 /**
  * Cobertura exclusion marker.
