@@ -207,7 +207,7 @@
          excludes="**/package.html">
       <manifest>
         <attribute name="Main-Class" 
-                   value="com.u14n.sandbox.swing.Main"/>
+                   value="com.u14n.sandbox.swing.HelloWorldFrameMain"/>
       </manifest>
     </jar>
   </target>

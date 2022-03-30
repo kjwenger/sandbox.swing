@@ -9,7 +9,7 @@ import com.u14n.sandbox.CoverageIgnore;
 /**
  *
  */
-public final class Main {
+public final class HelloWorldFrameMain {
     /**
      * Initial preferred width of content pane.
      * {@value}
@@ -19,13 +19,13 @@ public final class Main {
      * Initial preferred height of content pane.
      * {@value}
      */
-    private static final int CONTENT_HEIHT = 320;
+    private static final int CONTENT_HEIGHT = 320;
 
     /**
      * Hidden from instantiation.
      */
     @CoverageIgnore
-    private Main() {
+    private HelloWorldFrameMain() {
         // Empty
     }
 
@@ -34,9 +34,9 @@ public final class Main {
      *            Command line arguments provided at launch.
      */
     public static void main(final String[] args) {
-        JFrame jFrame = new JFrame("Hello World");
+        JFrame jFrame = new JFrame("Hello, World!");
         jFrame.getContentPane().setPreferredSize(
-                new Dimension(CONTENT_WIDTH, CONTENT_HEIHT));
+                new Dimension(CONTENT_WIDTH, CONTENT_HEIGHT));
         jFrame.pack();
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setVisible(true);

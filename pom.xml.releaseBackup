@@ -90,7 +90,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.u14n.sandbox.swing.Main</mainClass>
+							<mainClass>com.u14n.sandbox.swing.HelloWorldFrameMain</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -126,7 +126,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>com.u14n.sandbox.swing.Main</mainClass>
+					<mainClass>com.u14n.sandbox.swing.HelloWorldFrameMain</mainClass>
 				</configuration>
 			</plugin>
 			<plugin>
