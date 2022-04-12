@@ -282,8 +282,8 @@ public class UIManagerDefaults implements ActionListener, ItemListener
             return "Dimension";
         else if (value instanceof Number)
             return "Number";
-        else if (value instanceof Painter)
-            return "Painter";
+// KJW       else if (value instanceof Painter)
+//            return "Painter";
         else if (key.endsWith("UI"))
             return "UI";
         else if (key.endsWith("InputMap"))
